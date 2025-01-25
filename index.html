@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICT អនុវិទ្យាល័យសាមគ្គី</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/graph.css">
+    <link rel="stylesheet" href="styles/slieshow.css">
+    <link rel="stylesheet" href="styles/teachercard.css">
+</head>
+
+<body>
+    <header id="header"></header>
+    <div class="navigation">
+        <img class="nav-logo" src="img/Picture2.png" alt="">
+        <div data-en="Samaki Secondary School" data-km="អនុវិទ្យាល័យសាមគ្គី" class="titlenav">អនុវិទ្យាល័យសាមគ្គី
+        </div>
+        <button class="menu-button" onclick="toggleSidebar()">☰</button>
+        <div class="language-buttons">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Flag_of_the_United_Kingdom_%281-2%29.svg/640px-Flag_of_the_United_Kingdom_%281-2%29.svg.png"
+                alt="English" onclick="changeLanguage('en')">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/83/Flag_of_Cambodia.svg" alt="Khmer"
+                onclick="changeLanguage('km')">
+        </div>
+    </div>
+    <main>
+        <div class="sidebar" id="sidebar">
+            <h2>មាតិកា</h2>
+            <ul>
+                <li><a href="#" onclick="showHome()">ទំព័រដើម</a></li>
+                <li><a href="#statis">ស្ថិតិ</a></li>
+                <li><a href="schedule.html">កាលវិភាគសិក្សារបស់សិស្សឆ្នាំសិក្សា២០២៤-២៥</a></li>
+                <li><a href="#" onclick="showLessons('fundamental')">អាសយដ្ឋាន</a></li>
+                <li><a href="library.html">បណ្ណាល័យ</a></li>
+            </ul>
+        </div>
+        <div class="content" id="content">
+            <!-- <div data-en="Samaki Secondary School" data-km="អនុវិទ្យាល័យសាមគ្គី" class="cover">
+                សូមស្វាគមន៍មកកាន់អនុវិទ្យាល័យសាមគ្គី
+            </div> -->
+            <!-- slide show -->
+            <div class="slideshow-container">
+                <div class="slides">
+                    <div class="slide">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d4/20171126_Angkor_Wat_4712_DxO.jpg" alt="Slide 1">
+                        <div class="slide-title">សីលធម៌ ឥរិយាបថថ្លៃថ្នូរ</div>
+                    </div>
+                    <div class="slide">
+                        <img src="https://cdn.britannica.com/24/77424-050-4FF80B58/Angkor-Wat-Cambodia.jpg" alt="Slide 2">
+                        <div class="slide-title">គោរពច្បាប់ មានវិន័យ</div>
+                    </div>
+                    <div class="slide">
+                        <img src="https://www.telegraph.co.uk/content/dam/Travel/2019/November/cambodia.jpg?imwidth=680" alt="Slide 3">
+                        <div class="slide-title">ស្រឡាញ់ រាប់រក អធ្យាស្រ័យ</div>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Text Section -->
+            <div class="text-section">
+                <h2 data-en="Congratulations on the new academic year 2024-2025" data-km="អបអរសាទរបវរសនកាលឆ្នាំសិក្សាថ្មី ២០២៤-២០២៥">អបអរសាទរបវរសនកាលឆ្នាំសិក្សាថ្មី ២០២៤-២០២៥</h2>
+                <!-- <h2>២០២៤-២០២៥</h2> -->
+                <!-- <p>អនុវិទ្យាល័យសាមគ្គីកំពុងបណ្ដុះបណ្ដាលសិស្ស</p> -->
+            </div>
+             <!-- End slide show -->
+            <div class="description">
+                <h1 data-en="Welcome to Samaki Secondary School" data-km="សូមស្វាគមន៍មកកាន់អនុវិទ្យាល័យសាមគ្គី">
+                    សូមស្វាគមន៍មកកាន់អនុវិទ្យាល័យសាមគ្គី</h1>
+                <p data-en="Samaki Secondary School is located along National Road 57-7, in Chamkar Chek Village, Sung Commune, Samlot District, Battambang Province. It is approximately 15 kilometers away from Samlot district center.
+With the rapid development of technology, people's daily lives have changed significantly. For example, sharing and receiving information has become easier, faster, and more widespread thanks to digital technology.
+                In this context, Samaki Secondary School has also embraced digital technology by creating this website. This site provides information and services related to our school.
+                
+                For more information, please contact:
+                📞 Mr. Keo Bunthoeun (Director): 015 705 493
+                📞 Mr. Touch Sokkheng (Deputy Director): 088 444 6748"
+                    data-km="សាលាអនុវិទ្យាល័យសាមគ្គី មានទីតាំងស្ថិតនៅតាមបណ្ដោយផ្លូវជាតិលេខ ៥៧-៧ ភូមិចំការចេក ឃុំស៊ុង ស្រុកសំឡូត
+                    ខេត្តបាត់ដំបង ចម្ងាយប្រមាណ១៥គីឡូម៉ែត្រពីទីរួមស្រុកសំឡូត។ ការរីកចម្រើននៃបច្ចេកវិទ្យាបានផ្លាស់ប្តូរបរិបទនៃជីវិតរស់នៅប្រចាំថ្ងៃរបស់មនុស្សជាច្រើន។ ជាក់ស្ដែង ការផ្សព្វផ្សាយព័ត៌មាន និងការទទួលព័ត៌មានក្លាយជារឿងងាយស្រួល មានល្បឿនលឿន និងទូលំទូលាយ ដោយសារបច្ចេកវិទ្យាឌីជីថល។ ក្នុងន័យនេះ សាលាអនុវិទ្យាល័យសាមគ្គីក៏បានចូលរួមក្នុងការប្រើប្រាស់បច្ចេកវិទ្យាឌីជីថល និងបង្កើតវេបសាយនេះឡើងសម្រាប់ផ្តល់ព័ត៌មាន និងអនុវត្តសេវាកម្មផ្សេងៗដែលពាក់ព័ន្ធនឹងសាលារៀនរបស់យើង។ សម្រាប់ព័ត៌មានផ្សេងៗបន្ថែមសូមទំនាក់ទំនងមក៖
+                    📞លោក កែវ ប៊ុនធឿននាយក 015 705 493
+                    📞លោក ទូច សុខខេង នាយករង 088 444 6748">
+                    សាលាអនុវិទ្យាល័យសាមគ្គី មានទីតាំងស្ថិតនៅតាមបណ្ដោយផ្លូវជាតិលេខ ៥៧-៧ ភូមិចំការចេក ឃុំស៊ុង ស្រុកសំឡូត
+                    ខេត្តបាត់ដំបង ចម្ងាយប្រមាណ១៥គីឡូម៉ែត្រពីទីរួមស្រុកសំឡូត។
+                    ការរីកចម្រើននៃបច្ចេកវិទ្យាបានផ្លាស់ប្តូរបរិបទនៃជីវិតរស់នៅប្រចាំថ្ងៃរបស់មនុស្សជាច្រើន។ ជាក់ស្ដែង
+                    ការផ្សព្វផ្សាយព័ត៌មាន និងការទទួលព័ត៌មានក្លាយជារឿងងាយស្រួល មានល្បឿនលឿន និងទូលំទូលាយ
+                    ដោយសារបច្ចេកវិទ្យាឌីជីថល។ ក្នុងន័យនេះ
+                    សាលាអនុវិទ្យាល័យសាមគ្គីក៏បានចូលរួមក្នុងការប្រើប្រាស់បច្ចេកវិទ្យាឌីជីថល
+                    និងបង្កើតវេបសាយនេះឡើងសម្រាប់ផ្តល់ព័ត៌មាន និងអនុវត្តសេវាកម្មផ្សេងៗដែលពាក់ព័ន្ធនឹងសាលារៀនរបស់យើង។
+                    សម្រាប់ព័ត៌មានផ្សេងៗបន្ថែមសូមទំនាក់ទំនងមក៖<br>
+                    📞លោក <b>កែវ ប៊ុនធឿន</b> នាយក 015 705 493<br>
+                    📞លោក <b>ទូច សុខខេង</b> នាយករង 088 444 6748
+                </p>
+            </div>
+            <div id="statis" class="grid">
+                <div class="grid-item">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2472/2472253.png" alt="Expert Instructors Icon">
+                    <h3 data-en="Total teachers 15" data-km="គ្រូបង្រៀនសរុប ១៥ នាក់">គ្រូបង្រៀនសរុប ១៥ នាក់</h3>
+                    <!-- <p data-en="Total Teachers" data-km="គ្រូបង្រៀនសរុប">គ្រូបង្រៀនសរុប</p> -->
+                </div>
+                <div class="grid-item">
+                    <img src="https://cdn-icons-png.flaticon.com/256/2995/2995620.png"
+                        alt="Modern Curriculum Icon">
+                    <h3 data-en="Total Students 489" data-km="សិស្សសរុប ៤៨៩ នាក់">សិស្សសរុប ៤៨៩ នាក់</h3>
+                    <!-- <p data-en="Total Students (Academic year 2024-2025)" data-km="សិស្សសរុបក្នុងឆ្នាំសិក្សា២០២៤-២០២៥"> -->
+                        <!-- សិស្សសរុបក្នុងឆ្នាំសិក្សា២០២៤-២០២៥</p> -->
+                </div>
+                <div class="grid-item">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2995/2995633.png" alt="Hands-on Learning Icon">
+                    <h3 data-en="Total Female Students 200" data-km="សិស្សភេទស្រីសរុប ២០០ នាក់">សិស្សភេទស្រីសរុប ២០០ នាក់</h3>
+                    <!-- <p data-en="Total Female Students" data-km="សិស្សភេទស្រីសរុបក្នុងឆ្នាំសិក្សា២០២៤-២០២៥"> -->
+                        <!-- សិស្សភេទស្រីសរុបក្នុងឆ្នាំសិក្សា២០២៤-២០២៥</p> -->
+                </div>
+                <div class="grid-item">
+                  <img src="https://cdn-icons-png.flaticon.com/512/2801/2801557.png" alt="Community Support Icon">
+                  <h3 data-en="Total Buildings 2" data-km="អគារសិក្សា ២ ខ្នង">អគារសិក្សា ២ ខ្នង</h3>
+                  <!-- <p data-en="Total classrooms" data-km="ថ្នាក់រៀនសរុប">ថ្នាក់រៀនសរុប</p> -->
+              </div>
+                <div class="grid-item">
+                    <img src="https://cdn-icons-png.freepik.com/512/8093/8093191.png" alt="Community Support Icon">
+                    <h3 data-en="Total Classrooms 9" data-km="បន្ទប់រៀនសរុប ៩ បន្ទប់">បន្ទប់រៀនសរុប ៩ បន្ទប់</h3>
+                    <!-- <p data-en="Total classrooms" data-km="ថ្នាក់រៀនសរុប">ថ្នាក់រៀនសរុប</p> -->
+                </div>
+                <div class="grid-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScZdF8-fhM7g2N8mZzibYzW6ZdtU4DbOEeFQ&s" alt="Community Support Icon">
+                    <h3 data-en="Library 1" data-km="បណ្ណាល័យ ១ បន្ទប់">បណ្ណាល័យ ១ បន្ទប់</h3>
+                    <!-- <p data-en="Library" data-km="បណ្ណាល័យ">បណ្ណាល័យ</p> -->
+                </div>
+                <div class="grid-item">
+                    <img src="https://cdn4.iconfinder.com/data/icons/office-workplace-1/50/38-512.png" alt="Community Support Icon">
+                    <h3 data-en="Administative office 1" data-km="បន្ទប់ទីចាត់ការ ១ បន្ទប់">បន្ទប់ទីចាត់ការ ១ បន្ទប់</h3>
+                    <!-- <p data-en="Administrative office" data-km="ទីចាត់ការ">ទីចាត់ការ</p> -->
+                </div>
+                <div class="grid-item">
+                    <img src="https://www.shutterstock.com/image-vector/restroom-vector-sign-600nw-1222227385.jpg"
+                        alt="Community Support Icon">
+                    <h3 data-en="Total Restrooms 04" data-km="បន្ទប់ទឹកសរុប ០៤ បន្ទប់">បន្ទប់ទឹកសរុប ៤ បន្ទប់</h3>
+                    <!-- <p data-en="Total restrooms" data-km="បន្ទប់ទឹក គ្រូនិងសិស្ស">បន្ទប់ទឹក គ្រូនិងសិស្ស</p> -->
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- graph of total students -->
+<!-- Teacher card -->
+ <h3>គណៈគ្រប់គ្រង និងបុគ្គលិក</h3>
+<div class="container-teachercard">
+    <div class="cards-wrapper">
+      <div class="card">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3C1D6gTs6sU_-eiGhNU2M0EtikijKNcKt8zHhqMEtKc1F3zI_yyr_F3LO4He51BHi4T_6NsLt40EXHpA1FULR1tvJnCDfZwvMKI1oa_a3W7WkGzBhHUJU_7tNIUCSg8NeuF-QD9qvJgyGgrXHUgMUTeDO1Ls7MaBpPu3JNvfI8qu_6eBFHojrcxs5a5nr/s320/%E1%9E%80%E1%9F%82%E1%9E%9C_%E1%9E%94%E1%9F%8A%E1%9E%BB%E1%9E%93%E1%9E%92%E1%9E%BF%E1%9E%93-removebg-preview.png" alt="Teacher Photo">
+        <div class="card-info">
+          <h3>លោក កែវ ប៊ុនធឿន</h3>
+          <p>នាយក</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiGLqo5ICJLC1bfilELhJaMzfeYFny4G-aknopycHCw5F5DpqemshviC_X37Hi3p7sb0PqUoi4OyC-mxGmVDiDoQPjE3PS_CxmlHqzx7f1zRxMPSQyIpWL4k4zKVfwvkJ5QPGtDVqvKtNQ_q_NcOrhf9IGyhorGmC_jCbpm8d0pTn-UjuXuaO5I7RB_yVhL/s320/%E1%9E%91%E1%9E%BC%E1%9E%85_%E1%9E%9F%E1%9E%BB%E1%9E%81%E1%9E%81%E1%9F%81%E1%9E%84-removebg-preview.png" alt="Teacher Photo">
+        <div class="card-info">
+          <h3>លោក ទូច សុខខេង</h3>
+          <p>នាយករង</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivL63ULJpifX9htmWf3_-25lYZM1pDAwUtrgJJg1YsFOVKvuatkpfG0Vzcs_y0fr16SsP_zLAbYuBLgjG_zKNGWVNrnyI3gSZ9moBDKyI34m_u7ObFPfkMOqBMrMLLTHe2uR4Hh0QMR4I-Lk2N81x80JmAev0SyZlXUXuxyosphxefYLs_wFGKnQsjT0_o/s320/%E1%9E%8C%E1%9E%B9%E1%9E%98_%E1%9E%9F%E1%9E%B6%E1%9E%9A%E1%9E%B7%E1%9E%93-removebg-preview.png" alt="Teacher Photo">
+        <div class="card-info">
+          <h3>អ្នកស្រី ឌឹម សារិន</h3>
+          <p>លេខាធិការ ខ្មែរ+សីលធម៌</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj5L0ErO5pxQYkTlv6jibgahgvOTojRLJsewcM8c6QQjlDz2EdaUvJ0mGBvr3V_7fC4kk-FyVhPVuxo3yMquXmoeYTCHS4XSDzOl9wguaT_o7OSFcpao0QRqYlBpBTzPwh3SM3QXSJU09Mz6ZRemw62q5AUpze8xeerekbeMRtNFRIrHwkFzFVEtsnMEoQR/s320/%E1%9E%91%E1%9E%93%E1%9F%8B_%E1%9E%85%E1%9E%B6%E1%9E%93%E1%9F%8B%E1%9E%9F%E1%9E%BB%E1%9E%87%E1%9E%B6%E1%9E%8F%E1%9E%B7-removebg-preview.png" alt="Teacher Photo">
+        <div class="card-info">
+          <h3>កញ្ញា ទន់ ចាន់សុជាតិ</h3>
+          <p>ហេរញ្ញិក អង់គ្លេស+ខ្មែរ</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiEWufIil6_TIciMXUO0_W8jRiGQqwgNB6B8Uw1C1RJzAlYMyieVTULJ12ZPtxpelVuVxp0v2T22T7usp-Wu321nbdxqneeAgo1dKg_wsKmx6wvHIDVQGqbmjEUNkEChm8_UX0-ZSEJIBkGu0nx3lO40Kd45zZnA8-SVUSrT5UlbHq0FC9v98TWdAC_DDIi/s320/%E1%9E%95%E1%9E%B6%E1%9E%8F%E1%9F%8B_%E1%9E%80%E1%9F%82%E1%9E%9C-removebg-preview.png" alt="Teacher Photo">
+        <div class="card-info">
+          <h3>កញ្ញា ផាត់ កែវ</h3>
+          <p>បណ្ណារក្ស ប្រវត្តិ+ភូមិ</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjoBym4oRWaE2X4utxApuV8IP3jhcUbxgo0VBKUNMtEErqFIyzwjbruZXasW3vJhWJFNxDFIhyphenhyphenIWDqiDaqcVDNqRmyWDnQuSPy2Dy3QQ8ZOCDAcGu0bwyAUHNj4ui5pn52EDOAEC-uyMOAkNjZoXnM2Ayy9Y64M2UObp4IKkZS_MUroDFvEsNeqTEWeh47n/s320/%E1%9E%94%E1%9F%8A%E1%9E%B6%E1%9E%93_%E1%9E%97%E1%9E%B6%E1%9E%9A%E1%9F%89%E1%9E%B6-removebg-preview.png" alt="Teacher Photo">
+        <div class="card-info">
+          <h3>លោក ប៊ាន ភារ៉ា</h3>
+          <p>ខ្មែរ+សីលធម៌</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiw1j2iKxo7u9jN0HdAHOaHncY_lA0yb8pr7PhRm7oags5bO2xuwnawhXwx4HwRINKo0Jn8-yOWTnunCNQdfpox_rNKMUVGx_69JVJ9b-Hnx6u5CKv4X629n6BUTqB6jfyc8t1YWb1vAHfrQOaJU4-8gY60MBzUxPCGG9rIIC-2mgC3cyW5-qrns_iYP-Dg/s320/%E1%9E%A2%E1%9F%8A%E1%9E%BC%E1%9E%85_%E1%9E%98%E1%9F%89%E1%9F%82%E1%9E%8F-removebg-preview.png" alt="Teacher Photo">
+        <div class="card-info">
+          <h3>លោក អ៊ូច ម៉ែត្រ</h3>
+          <p>រូប+គីមី</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQFPsSpq2I2JWpqZjMNawXcv_QhsfgAZD5c8pcQ64dtzBsDOXvvOBElTCwq2fFbKQok3W4YjfvOJYljgWA5kvbYAwaeeWW-pCk5k2H9eB3lLbOmxuPSv1FdxJlAD8mozC1BJ7FxELeAiIq9F7pAEizsaIC3fZoRaYFHxBLoMOjCVUYZ8gBiIIL5YAtyErm/s320/%E1%9E%9F%E1%9E%BB%E1%9E%81_%E1%9E%9F%E1%9E%B6%E1%9E%9A%E1%9E%BF%E1%9E%93-removebg-preview.png" alt="Teacher Photo">
+        <div class="card-info">
+          <h3>លោក សុខ សារឿន</h3>
+          <p>ខ្មែរ+សីលធម៌</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgEAGaaqxQpWOi20NYJb-w1cLFgRfM-R_EhfLZ_p1rGWeG0cDPk-SGh4hfQzUEYnYjjvCEFa4SezsRwwp3u4tpwSeZIewKhZR3FO_pFnVYcGIcK9C_tT6Jd84mKk4olcdmnOa0LLJF3MMWGk1_-HadrZG2Mnp5kN9SiUMkHDj0sUnAT5D1my2yS62BHYTFt/s320/%E1%9E%9A%E1%9F%89%E1%9F%81%E1%9E%8F_%E1%9E%85%E1%9F%86%E1%9E%9A%E1%9E%BE%E1%9E%93-removebg-preview.png" alt="Teacher Photo">
+        <div class="card-info">
+          <h3>អ្នកស្រី រ៉េត ចំរើន</h3>
+          <p>ខ្មែរ+គេហៈ</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi1onEvOs0Y0N8aymiuq4xGg6jaz8KqKoZ9X9KFmHuTBngjWwH3IovoS9sE1JGFz0h-XUXHfhZ-k7p8jQkyJ6Efsfx74JpUp1-yZHPsrL6HNFafA3ie5HKskGMtGsTD-dToTlUFUbLlFuyPt1i8tVfaezsq1a9ieL-MepapgRs2eIMikelSsFsV1xvkwWni/s320/%E1%9E%84%E1%9E%BD%E1%9E%93_%E1%9E%9F%E1%9E%BB%E1%9E%9C%E1%9E%8E%E1%9F%92%E1%9E%8E%E1%9F%88-removebg-preview.png" alt="Teacher Photo">
+        <div class="card-info">
+          <h3>លោក ងួន សុវណ្ណៈ</h3>
+          <p>អប់រំកាយ+កីឡា</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjCFpOytPljrNg07ePQKAVvhUNFLmYO-T6hZ9r7QMbAEKABtIomQCUzwdTdObROxzT8ldhk26aP_ytAWe6XLrlhB8c5PcKmxrpAOdh-YkJKZgJW3lAqzmD3XXKdmh2dKts9Sts-LvSkTwm_inhioG5pVn6hue75S1PIlz9PEs6szdtwgMxnGA3GdvFQEsZA/s320/%E1%9E%8C%E1%9E%BB%E1%9E%9B_%E1%9E%94%E1%9E%BB%E1%9E%94%E1%9F%92%E1%9E%95%E1%9E%B6-removebg-preview.png" alt="Teacher Photo">
+        <div class="card-info">
+          <h3>អ្នកស្រី ឌុល បុប្ផា</h3>
+          <p>រូប+គីមី</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjkRGC_Vw-OK1oym9b8wPtB21CCXHxsj-qiyNFD1OpyoU86yjlxL3LYTf1EJRPKrtnkkCvsCnwP5t3EJ9eKbmWNsH4YMBR1jLjcqKedW1CP4_DHfR2VNVulLs04fMeOrUyX27_xs7gTDrW6lC1hDNFWrtc_ShlcxJU8Aue8tUwYUD86d30D4keJjDLmm6Kj/s320/%E1%9E%91%E1%9F%81%E1%9E%96_%E1%9E%92%E1%9E%B8%E1%9E%8F%E1%9E%B6-removebg-preview.png" alt="Teacher Photo">
+        <div class="card-info">
+          <h3>អ្នកស្រី ទេព ធីតា</h3>
+          <p>ជីវៈ+ផែនដី</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiabl6NMup2E1Xxt9kAOsZcRZFBHSu6RwkxEXimwLwX-RkQM14esEezwuD2YrsOIgnIkRXqiSY2frtY3_1vrhdHa1auY_J3k0eIy2zNSEBq4tB6uhiAse1nY7Vx76CQX7CbpnUhawyC8sDJzJFLCNcDQ9YpS9g12z3f3kTXwiwRjb2gjpUhxNoKEtBFA-Fj/s320/%E1%9E%80%E1%9F%82%E1%9E%93_%E1%9E%9F%E1%9E%B6%E1%9E%9A%E1%9F%89%E1%9E%B6%E1%9E%99-removebg-preview.png" alt="Teacher Photo">
+        <div class="card-info">
+          <h3>លោក កែន សារ៉ាយ</h3>
+          <p>គណិត+រូប</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiEVfHKiEirM1RM26sLm9VmbErUh8kPaND2KF6sXc9nQqB9nj-p_5kzU1qE9LvA63QD-9cgM086RfhbGzhIEkQu52AoNTXVyeascURgW-m4xSKgA1hJ314K-Kj_qKzIJh6LJXxa5Ggru9AgHHR-DfLwjW-lp40u2EctDD9BozhktsMwUxfuqrxx_LwvK00U/s320/%E1%9E%94%E1%9F%92%E1%9E%9A%E1%9E%B9%E1%9E%98%E1%9E%98%E1%9F%89%E1%9F%81%E1%9E%84%E1%9E%A0%E1%9F%90%E1%9E%9A-removebg-preview.png" alt="Teacher Photo">
+        <div class="card-info">
+          <h3>លោក ប្រឹម ម៉េងហ័រ</h3>
+          <p>អប់រំកាយ+កីឡា</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgypEzjPRZq8TnSZhNz-C4Co2J7vb4FjMAfXz9kJgWJHf0iDpeUPxirRPnlZzFFeW8x6DQiu_b14LAG7YyU5MQ1DI34uH32bummPu_DuXP0Hudml_QOrgXdm1m6AQ7ooGe1eSEsuKzSIYkjbM-WfzvCcsC2Zq72fJ-4ca969uId7Cm7_3tLC4zThAyqJdgG/s320/%E1%9E%98%E1%9E%B8%20%E1%9E%A1%E1%9E%84%E1%9E%8C%E1%9E%B8.png" alt="Teacher Photo">
+        <div class="card-info">
+          <h3>លោក មី ឡងឌី</h3>
+          <p>ICT+អង់គ្លេស</p>
+        </div>
+      </div>
+    </div>
+  </div>
+ <!--End Teacher card -->
+    <div class="chart-container">
+        <h4>ស្ថិតិចំនួនសិស្សតាមឆ្នាំ</h4>
+        <canvas id="studentChart"></canvas>
+    </div>
+    <div class="legend">
+        <div class="legend-item male">
+            <div class="box"></div>
+            <span>ចំនួនសិស្សសរុប</span>
+        </div>
+        <div class="legend-item female">
+            <div class="box"></div>
+            <span>ចំនួនសិស្សស្រី</span>
+        </div>
+    </div>
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script/graph.js"></script>
+    <!-- end graph -->
+    <div class="orgsupport">
+        <div class="org-title">
+            អង្គការផ្ដល់ជំនួយអភិវឌ្ឍគម្រោងនានានៅសាលាអនុវិទ្យាល័យសាមគ្គី
+        </div>
+        <div class="org-container">
+            <img src="https://nepcambodia.org/wp-content/uploads/2022/04/handicap_logo.png" alt="">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAoYBA-t2ltyuLyVAUjHPx_YkyUd_VzOSx2w&s"
+                alt="">
+            <img src="https://nepcambodia.org/wp-content/uploads/2022/05/Childs-Dream-Cambodia-Organization.png" alt="">
+            <img src="https://www.khencambodia.org/uploads/8/5/2/8/85284128/khen-logo-800px_2.png" alt="">
+        </div>
+    </div>
+    <footer>
+        © 2025 ICT Club
+    </footer>
+
+    <script>
+        function toggleSidebar() {
+            document.getElementById('sidebar').classList.toggle('active');
+        }
+
+        function changeLanguage(lang) {
+            const elements = document.querySelectorAll('[data-en]');
+            elements.forEach(element => {
+                element.innerText = element.getAttribute('data-' + lang);
+            });
+        }
+    </script>
+    <script src="script/animationscroll.js"></script>
+    <script src="script/slideshow.js"></script>
+    <script src="script/teachercard.js"></script>
+</body>
+
+</html>
