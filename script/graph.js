@@ -4,8 +4,8 @@ const canvas = document.getElementById('studentChart');
     // Chart Data
     const data = {
       years: ['2020-2021', '2021-2022', '2022-2023', '2023-2024', '2024-2025'],
-      male: [294, 357, 394, 381, 383, 390],
-      female: [142, 184, 213, 221, 222, 201]
+      male: [357, 394, 381,  383, 390],
+      female: [184, 213, 221, 222, 201]
     };
 
     // Responsive Canvas Dimensions
