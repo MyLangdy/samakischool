@@ -291,6 +291,15 @@ footer {
         width: 28px;
         height: 20px;
     }
+    body{
+        background-image: url('../img/buttom_img.png'); /* Replace with your image URL */
+        /* background-size: cover; */
+        background-size: 100% auto;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        margin-bottom: -400px;
+        background-attachment: fixed;
+    }
 }
 
 .nav-logo {
